@@ -1,0 +1,16 @@
+[project]
+name = "energy-forecast-with-mlops"
+version = "0.1.0"
+description = "Full MLOps pipeline of a portuguese energy production forecast model"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.3.3",
+    "uv>=0.9.6",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+    "ruff>=0.14.2",
+]
