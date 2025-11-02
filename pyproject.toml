@@ -13,4 +13,5 @@ dependencies = [
 dev = [
     "pre-commit>=4.3.0",
     "ruff>=0.14.2",
+    "mypy>=1.0.0",
 ]

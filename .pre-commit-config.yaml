@@ -4,13 +4,26 @@ repos:
     hooks:
       - id: ruff
         args: [--fix]
+        files: ^src/|^main\.py$
       - id: ruff-format
+        files: ^src/|^main\.py$
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
       - id: check-merge-conflict
+        files: ^src/|^main\.py$
       - id: check-added-large-files
+        files: ^src/|^main\.py$
       - id: end-of-file-fixer
+        files: ^src/|^main\.py$
       - id: trailing-whitespace
+        files: ^src/|^main\.py$
       - id: debug-statements
+        files: ^src/|^main\.py$
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.10.0
+    hooks:
+      - id: mypy
+        files: ^src/|^main\.py$
